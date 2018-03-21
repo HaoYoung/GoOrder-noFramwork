@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <title>GoOrder Food Local Delivery</title>
+		<link rel="stylesheet" href="assets\stylesheets\main.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    </head>
+
+    <body>
+        <header class="primary-header container group">
+	
+	      <h1 class="logo">
+	        <a href="LoginPage.html">Go <br> Order</a>
+	      </h1>
+	
+	      <h3 class="tagline">Fast Delivery Guaranteed</h3>
+	
+	      <nav class="nav primary-nav">
+	        <ul>
+	          <li><a href="customerWelcome.html" class="headernav">Home</a></li><!--
+	          --><li><a href="userSettings.html" class="headernav">Settings</a></li><!--
+	          --><li><a href="SignUp.html" class="headernav">Register</a></li><!--
+	          --><li><a href="#"><img src="assets/images/shopping-cart.png" class="cart"> </a></li>
+	        </ul>
+	      </nav>
+	
+	    </header>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="customerWelcome.html" class="closebtn" >&times;</a>
+          <a href="#">Make Orders</a>
+          <a href="#">Restaurants</a>
+          <a href="#">Foods</a>
+          <a href="#">Contact us</a>
+          <a href="#">Report</a>
+        </div>
+
+        <h2><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; manu</span></h2>
+        <p><input type="text" name="search" placeholder="Search the food you like.."></p>
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+        </script>
+    
+    </body>
+
+</html>

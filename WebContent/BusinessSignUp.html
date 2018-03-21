@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Sign up For a new Restaurant account</title>
+	<link rel="stylesheet" href="assets\stylesheets\main.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+</head>
+<body>
+	<header class="primary-header container group">
+	
+	      <h1 class="logo">
+	        <a href="LoginPage.html">Go <br> Order</a>
+	      </h1>
+	
+	      <h3 class="tagline">Fast Delivery Guaranteed</h3>
+	
+	      <nav class="nav primary-nav">
+	        <ul>
+	          <li><a href="LoginPage.html" style="display: block; height: 35px; text-fond; font-size: 22px;">Home</a></li><!--
+	          --><li><a href="userSettings.html" style="display: block; height: 35px; font-size: 22px;">Settings</a></li><!--
+	          --><li><a href="SignUp.html" style="display: block; height: 35px; font-size: 22px;">Register</a></li><!--
+	          --><li><a href="#"><img src="assets/images/shopping-cart.png" class="cart"> </a></li>
+	        </ul>
+	      </nav>
+	
+	</header>
+
+<div class="main" style="background-image: url(assets/images/spring-roll.jpg); height: 900px; background-position: center; background-repeat: no-repeat; background-size: cover">
+	<form class="col-1-3" action="BusinessSignUp.jsp" method="post">
+	<br><br><br><br><br><br><br><br><br><br>
+		<table cellpadding="5" cellspacing="20">
+			<tbody>
+			    <tr>
+		    		<td>Restaurant Name</td>
+		    		<td><input type="text" placeholder="Enter Restaurant name" name="restaurantname" required></td>
+				</tr>
+			    <tr>
+				    <td>First Name</td>
+				    <td><input type="text" placeholder="Enter First Name" name="first_name" required></td>
+		    	</tr>
+		    	<tr>
+		    		<td>Last Name</td>
+		    		<td><input type="text" placeholder="Enter Last Name" name="last_name" required></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+		    		<td><input type="text" placeholder="Enter Email" name="email" required></td>
+		    	</tr>
+		    	<tr>
+		    		<td>Phone Number</td>
+		    		<td><input type="text" placeholder="Enter Phone Number" name="phone" required></td>
+				</tr>
+				<tr>
+		    		<td>Password</td>
+		    		<td><input type="password" placeholder="Enter Password" name="psw" required></td>
+				</tr>
+				<tr>
+		    		<td>Repeat Password</td>
+		    		<td><input type="password" placeholder="Repeat Password" name="psw-repeat" required></td>
+		    	</tr>
+		    </tbody>
+	    </table>
+	    <div class="term">
+	    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+	    <input type="checkbox" style="margin-bottom:15px"> agree
+	    </div>
+	    <div class="clearfix">
+	      <button type="submit" class="cancelbtn">Cancel</button>
+	      <input class="btn btn-default" type="submit" name="submit" value="Register">
+	    </div>
+    </form>
+ </div>   
+
+</body>
+</html>

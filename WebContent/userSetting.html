@@ -1,0 +1,140 @@
+<html lang="en">
+    <head>
+        <title>GoOrder Food Local Delivery</title>
+		<link rel="stylesheet" href="assets\stylesheets\main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header class="primary-header container group">
+            <!-- Image and text -->
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#" style="font-size:30px">
+                    <img src="/assets/images/icon1.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                    GoOrder
+                </a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="LoginPage.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="userSettings.html">SETTINGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SignUp.html">REGISTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BusinessSignUp.html">RESTAURANT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CART<span class="badge badge-light">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+	    </header>
+        
+        <section class="rows">
+            <div class="grid">
+                <!-- Side Bar -->
+                <section id="mySidenav" class="col-1-5">
+                    <h2 class="title">Your account</h2>
+                    <button id="profile" class="sidenav-btn active">Profile</button>
+                    <button id="address" class="sidenav-btn">Addresses</button>
+                    <button id="payment" class="sidenav-btn">Payments</button>
+                    <button id="pass" class="sidenav-btn">Change Password</button>
+                    <button id="delete" class="sidenav-btn">Delete Account</button>
+                    <button id="contact" class="sidenav-btn">Contact us</button>
+                </section>
+                
+                <section class="col-4-5" style="background-size: cover; background-image: url(assets/images/setting-background.jpg)">
+                    
+                    <div id="row1" class="setting-row">
+                        <div id="row1-title" class="setting-row-tag">Name</div>
+                        <div class="setting-row-info"><a id="row1-info">John Snow</a></div>
+                    </div>
+
+                    <div id="row2" class="setting-row">
+                        <div id="row2-title" class="setting-row-tag">Email</div>
+                        <div class="setting-row-info"><a id="row2-info">John-Snow@GameOfThrones.com</a></div>
+                    </div>
+
+                    <div id="row3" class="setting-row">
+                        <div id="row3-title" class="setting-row-tag">Phone</div>
+                        <div class="setting-row-info"><a id="row3-info">(319)-111-1111</a></div>
+                    </div>
+                    
+                    <div id="row4" class="setting-row">
+                        <div id="row4-title" class="setting-row-tag"> x </div>
+                        <div class="setting-row-info"><a id="row4-info"> x </a></div>
+                    </div>
+                    
+                    <div id="row5" class="setting-row">
+                        <div id="row5-title" class="setting-row-tag"> x </div>
+                        <div class="setting-row-info"><a id="row5-info"> x </a></div>
+                    </div>
+                    
+                    <div id="row6" class="setting-row">
+                        <button id="add-btn">ADD</button>
+                    </div>
+                    
+                    <div id="id03" class="containers">
+			      	  <div>
+			      		<div>Current Password</div>
+			      		<input type="text" id="old-pass" required>
+			          </div>
+			      	  <div>
+			      		 <div>New Password</div>
+			      	      <input type="text" id="new-pass1" required>
+			          </div>
+                        <div>
+			      		 <div>Repeat Password</div>
+			      	      <input type="text" id="new-pass2" required>
+			          </div>
+			      	  <button id="update-btn">Update</button>
+			        </div>
+                    
+                    <div id="id04" class="containers">
+                        <div>
+                            <div>Current Password</div>
+                            <input type="text" id="pass" required>
+                            <button id="update-btn">Delete</button>
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+            </div>
+        </section>
+        
+        <div id="id01" class="modal1">
+			<div class="modal1-content animate">
+			    <div id="id02" class="containers">
+			      	<div id="pop-label1-holder">
+			      		<div id="pop-label1">Street Address</div>
+			      		<input type="text" id="new-info1" required>
+			      	</div>
+			      	<div id="pop-label2-holder">
+			      		<div id="pop-label2">Suite/Apt #</div>
+			      	    <input type="text" id="new-info2">
+			        </div>
+                    <div id="pop-label3-holder">
+			      		<div id="pop-label3">City</div>
+			      	    <input type="text" id="new-info3" required>
+			        </div>
+                    <div id="pop-label4-holder">
+			      		<div id="pop-label4">State</div>
+			      	    <input type="text" id="new-info4" required>
+			        </div>
+                    <div id="pop-label5-holder">
+			      		<div id="pop-label5">Zip Code</div>
+			      	    <input type="text" id="new-info5" required>
+			        </div>
+			      	<button id="update-btn">Update</button>
+			    </div>
+			</div>
+		</div>
+        
+        <script src="userSetting.js"></script>
+    </body>
+
+</html>
